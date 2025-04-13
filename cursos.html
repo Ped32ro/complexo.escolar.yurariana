@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<!-- Declaração do tipo de documento como HTML5 -->
+<html lang="pt-BR">
+<!-- Define o idioma da página como português do Brasil -->
+
+<head>
+    <!-- Meta tags para configuração do documento -->
+    <meta charset="UTF-8">
+    <!-- Define o conjunto de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Configura a viewport para dispositivos móveis -->
+    <title>Cursos - Universidade Acadêmica</title>
+    <!-- Título da página exibido na aba do navegador -->
+
+    <!-- Links para folhas de estilo externas -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Importa a biblioteca Font Awesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- Importa a biblioteca Animate.css para animações -->
+
+    <!-- Estilos CSS internos -->
+    <style>
+        /* Estilos gerais para o corpo da página */
+        body {
+            font-family: Tahoma, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+                              }
+
+        /* Estilos para o cabeçalho */
+        header {
+            background-image: url('sala9.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        /* Estilos para a barra de navegação */
+        nav {
+            background-color: #404be2;
+            padding: 10px;
+            text-align: center;
+        }
+
+        /* Estilos para os links da barra de navegação */
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Efeito de sublinhado ao passar o mouse sobre os links */
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Estilos para o container principal */
+        .container {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Estilos para títulos e parágrafos */
+        h1, p {
+            color: white;
+        }
+        p1, p2, p3, p4, p5, p6, p7, h2, h3 {
+            color: #0a0b0c;
+        }
+
+        /* Estilos para os cards de cursos */
+        .course {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        /* Efeito de levantar o card ao passar o mouse sobre os cursos */
+        .course:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Estilos para os títulos dos cursos */
+        .course h3 {
+            margin-top: 0;
+            color: #004080;
+        }
+
+        /* Estilos para os parágrafos dentro dos cards de cursos */
+        .course p {
+            margin: 10px 0;
+        }
+
+        /* Estilos para a seção de redes sociais */
+        .social-media {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        /* Estilos para os ícones de redes sociais */
+        .social-media a {
+            color: #0c0f11;
+            margin: 0 10px;
+            font-size: 24px;
+            transition: color 0.3s;
+        }
+
+        /* Efeito de mudança de cor ao passar o mouse sobre os ícones */
+        .social-media a:hover {
+            color: #004080;
+        }
+
+        /* Estilos para a seção de chamada para ação (CTA) */
+        .cta {
+            background-color: #89CFF0;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+
+        /* Estilos para o botão de CTA */
+        .cta-button {
+            background-color: #004080;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        /* Efeito de mudança de cor ao passar o mouse sobre o botão */
+        .cta-button:hover {
+            background-color: #004080;
+        }
+
+        /* Estilos para a seção de depoimentos */
+        .testimonial {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        /* Estilos para o rodapé */
+        footer {
+            background-color: #404be2;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 20px;
+        }
+
+        /* Estilos para a imagem do logo no rodapé */
+        footer img {
+            width: 50px;
+            margin-bottom: 10px;
+        }
+
+        /* Estilos para os links no rodapé */
+        footer a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        /* Efeito de sublinhado ao passar o mouse sobre os links no rodapé */
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Cabeçalho da página com animação de fadeIn -->
+    <header class="animate__animated animate__fadeIn">
+        <h1>Complexo Escola Privado Yuraryana</h1>
+        <p>Excelência em Educação e Pesquisa</p>
+    </header>
+
+    <!-- Barra de navegação -->
+    <nav>
+        <div class="nav-links" id="nav-links">
+            <a href="index.html">Home</a>
+            <a href="sobre nós.html">Sobre Nós</a>
+            <a href="produtos+serviços.html">Serviços</a>
+            <a href="noticias.html">Notícias</a>
+            <a href="contacto.html">Contato</a>
+        </div>
+    </nav>
+
+    <!-- Container principal -->
+    <div class="container">
+        <!-- Título da seção de cursos com animação de fadeIn -->
+        <h2 class="animate__animated animate__fadeIn">Nossos Cursos</h2>
+
+        <!-- Card do curso de Gestão de Informática com animação de fadeIn -->
+        <div class="course animate__animated animate__fadeIn">
+            <h3><i class="fas fa-laptop-code"></i> Informática de Gestão</h3>
+            <p1>O curso de Informática de Gestão prepara os alunos para atuar na administração de sistemas de informação, desenvolvimento de software e gestão de projetos tecnológicos. Com uma abordagem prática e atualizada, nossos alunos estão prontos para os desafios do mercado de trabalho.</p1>
+        </div>
+
+        <!-- Card do curso de Gestão de Contabilidade com animação de fadeIn -->
+        <div class="course animate__animated animate__fadeIn">
+            <h3><i class="fas fa-calculator"></i> Contabilidade </h3>
+            <p2>O curso de Contabilidade forma profissionais capacitados para atuar na área financeira, contábil e fiscal. Com uma grade curricular abrangente, nossos alunos desenvolvem habilidades essenciais para a gestão de recursos e tomada de decisões estratégicas.</p2>
+        </div>
+
+        <!-- Card do curso de Ciências Econômicas e Jurídicas com animação de fadeIn -->
+        <div class="course animate__animated animate__fadeIn">
+            <h3><i class="fas fa-balance-scale"></i> Ciências Econômicas e Jurídicas</h3>
+            <p3>O curso de Ciências Econômicas e Jurídicas oferece uma formação interdisciplinar, preparando os alunos para atuar nas áreas de economia, direito e gestão pública. Com uma abordagem crítica e ética, nossos alunos estão aptos a enfrentar os desafios do mundo contemporâneo.</p3>
+        </div>
+
+        <!-- Seção de chamada para ação (CTA) com animação de fadeIn -->
+        <section class="cta animate__animated animate__fadeIn">
+            <h2>Quer saber mais sobre nossos cursos?</h2>
+            <a href="contacto.html" class="cta-button">Fale Conosco</a>
+        </section>
+
+        <!-- Seção de depoimentos com animação de fadeIn -->
+        <section class="testimonial animate__animated animate__fadeIn">
+            <p6>"O Complexo Escola Privado Yuraryana transformou minha carreira. Recomendo a todos!"</p6>
+            <p7><strong>— Matondo Pedro, Ex-Aluno</strong></p7>
+        </section>
+
+        <!-- Seção de redes sociais com animação de fadeIn -->
+        <div class="social-media animate__animated animate__fadeIn">
+            <a href="https://web.facebook.com/profile.php?id=100092992183432&mibextid=ZbWKwL&_rdc=1&_rdr#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/colegioyuraryana/?igsh=YmR1dnlxemw1dHhq#" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+    </div>
+
+    <!-- Rodapé da página -->
+    <footer>
+        <img src="back.png" alt="Logo da Universidade">
+        <p>&copy; 2025. Todos os direitos reservados.</p>
+        <a href="politica-de-privacidade.html">Política de Privacidade</a>
+        <a href="termos-de-uso.html">Termos de Uso</a>
+    </footer>
+
+</body>
+</html>

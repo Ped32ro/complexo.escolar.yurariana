@@ -1,0 +1,232 @@
+    /* Estilos gerais para o corpo da página */
+        body {
+            font-family: Tahoma, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #000000;
+        }
+
+        /* Estilos para o cabeçalho */
+        header {
+            background-image: url('sala9.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Estilos para o vídeo de fundo no cabeçalho */
+        #header-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        /* Estilos para a barra de navegação */
+        nav {
+            background-color: #404be2;
+            color: rgb(66, 90, 230);
+            padding: 10px;
+            text-align: center;
+        }
+
+        /* Estilos para os links da barra de navegação */
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Efeito de sublinhado ao passar o mouse sobre os links */
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Estilos para o container principal */
+        .container {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Estilos para títulos e parágrafos */
+        h1, p1 {
+            color: white;
+        }
+        h2  {
+            color: #3636c5;
+            
+        }
+
+        /* Estilos para as seções da página */
+        .mission, .vision, .values, .team, .cta, .testimonial, .structure, .pedagogy {
+            margin-bottom: 30px;
+        }
+
+        /* Estilos para parágrafos e listas dentro das seções */
+        .nossa-historia p2, .mission p, .vision p, .values ul, .structure p, .pedagogy p {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Estilos para a lista de valores */
+        .values ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        /* Estilos para os itens da lista de valores */
+        .values ul li {
+            margin-bottom: 10px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        /* Adiciona um ícone de check antes de cada item da lista de valores */
+        .values ul li::before {
+            content: "✔";
+            color: #003366;
+            position: absolute;
+            left: 0;
+        }
+
+        /* Estilos para os membros da equipe */
+        .team-member {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        /* Efeito de levantar o card ao passar o mouse sobre os membros da equipe */
+        .team-member:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Estilos para as imagens dos membros da equipe */
+        .team-member img {
+            border-radius: 50%;
+            margin-right: 20px;
+            width: 100px;
+            height: 100px;
+        }
+
+        /* Estilos para a seção de chamada para ação (CTA) */
+        .cta {
+            background-color: #89CFF0;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        /* Estilos para o botão de CTA */
+        .cta-button {
+            background-color: #004080;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        /* Efeito de mudança de cor ao passar o mouse sobre o botão */
+        .cta-button:hover {
+            background-color: #460066;
+        }
+
+        /* Estilos para a seção de depoimentos */
+        .testimonial {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        /* Estilos para a seção de redes sociais */
+        .social-media {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        /* Estilos para os ícones de redes sociais */
+        .social-media a {
+            color: #003366;
+            margin: 0 10px;
+            font-size: 24px;
+            transition: color 0.3s;
+        }
+
+        /* Efeito de mudança de cor ao passar o mouse sobre os ícones */
+        .social-media a:hover {
+            color: #004080;
+        }
+
+        /* Estilos para o rodapé */
+        footer {
+            background-color: #404be2;
+            color: aliceblue;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 10px;
+        }
+
+        /* Estilos para a imagem do logo no rodapé */
+        footer img {
+            width: 50px;
+            margin-bottom: 10px;
+        }
+
+        /* Estilos para os links no rodapé */
+        footer a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        /* Efeito de sublinhado ao passar o mouse sobre os links no rodapé */
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Estilos para a galeria de imagens */
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 20px 0;
+        }
+
+        /* Estilos para as imagens da galeria */
+        .gallery img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        /* Estilos para o vídeo com bordas arredondadas */
+        .nossa-historia-video {
+            width: 100%;
+            max-width: 600px;
+            margin: 20px 0;
+            border-radius: 20px; /* Bordas arredondadas */
+            overflow: hidden; /* Garante que o vídeo respeite as bordas arredondadas */
+        }
