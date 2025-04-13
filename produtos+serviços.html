@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviços - Complexo Escola Privado Yuraryana</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    <style>
+        /* Estilos gerais para o corpo da página */
+        body {
+            font-family: Tahoma, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #000000;
+        }
+
+        /* Estilos para o cabeçalho */
+        header {
+            background-image: url('sala9.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            position: relative;
+        }
+
+        /* Estilos para o logo no cabeçalho */
+        .logo {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 114px;
+        }
+
+        /* Estilos para a barra de navegação */
+        nav {
+            background-color: #404be2;
+            padding: 10px;
+            text-align: center;
+        }
+
+        /* Estilos para os links da barra de navegação */
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Efeito de sublinhado ao passar o mouse sobre os links */
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Estilos para o container principal */
+        .container {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Estilos para as seções da página */
+        .section {
+            margin-bottom: 30px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        /* Efeito de levantar a seção ao passar o mouse */
+        .section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Estilos para títulos e parágrafos dentro das seções */
+        .section h2, a, h3 {
+            color: #404be2;
+        }
+        .section p {
+            color: #050505;
+        }
+
+        /* Estilos para a seção de chamada para ação (CTA) */
+        .cta {
+            background-color: #89CFF0;
+            color: #003366;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+
+        /* Estilos para o botão de CTA */
+        .cta-button {
+            background-color: #3032d8;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+                   }
+
+        /* Estilos para a seção de redes sociais */
+        .social-media {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        /* Estilos para os ícones de redes sociais */
+        .social-media a {
+            color: #003366;
+            margin: 0 10px;
+            font-size: 24px;
+            transition: color 0.3s;
+        }
+
+        /* Efeito de mudança de cor ao passar o mouse sobre os ícones */
+        .social-media a:hover {
+            color: #004080;
+        }
+
+        /* Estilos para o rodapé */
+        footer {
+            background-color: #404be2;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 10px;
+        }
+
+        /* Estilos para a imagem do logo no rodapé */
+        footer img {
+            width: 50px;
+            margin-bottom: 10px;
+        }
+
+        /* Estilos para os links no rodapé */
+        footer a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        /* Estilos específicos para a página de serviços */
+        .product-category {
+            margin-bottom: 30px;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .product-card {
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+
+        .product-image {
+            height: 200px;
+            overflow: hidden;
+        }
+
+        .product-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+
+        .product-card:hover .product-image img {
+            transform: scale(1.05);
+        }
+
+        .product-info {
+            padding: 15px;
+        }
+
+        .price {
+            font-weight: bold;
+            color: #e74c3c;
+            font-size: 1.2rem;
+            margin-bottom: 15px; /* Adicionado espaçamento abaixo do preço */
+            display: block; /* Garante que o preço ocupe toda a linha */
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="animate__animated animate__fadeIn">
+        <h1>Complexo Escola Privado Yuraryana</h1>
+        <p>Excelência em Educação e Pesquisa</p>
+    </header>
+
+    <nav>
+        <div class="nav-links" id="nav-links">
+            <a href="index.html">Home</a>
+            <a href="sobre nós.html">Sobre nós</a>
+            <a href="cursos.html">Cursos</a>
+            <a href="noticias.html">Notícias</a>
+            <a href="contacto.html">Contato</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <section class="section animate__animated animate__fadeIn">
+            <h2><i class="fas fa-tshirt"></i> Uniformes Escolares</h2>
+            <p>Nossa linha completa de uniformes escolares foi cuidadosamente desenvolvida para oferecer conforto, durabilidade e estilo, mantendo a identidade da nossa instituição.</p>
+            
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="uni.png" alt="Uniforme Masculino">
+                    </div>
+                    <div class="product-info">
+                        <h3>Uniforme Masculino</h3>
+                        <p>Conjunto completo com camisa polo, calça e cinto.</p>
+                        <div class="price">5.000 Kz</div>
+                        <a href="#" class="cta-button">Encomendar</a>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="uni.png" alt="Uniforme Feminino">
+                    </div>
+                    <div class="product-info">
+                        <h3>Uniforme Feminino</h3>
+                        <p>Conjunto com blusa, saia e cinto.</p>
+                        <div class="price">5.500 Kz</div>
+                        <a href="#" class="cta-button">Encomendar</a>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="educ.jpg" alt="Uniforme Esportivo">
+                    </div>
+                    <div class="product-info">
+                        <h3>Uniforme Esportivo</h3>
+                        <p>Camiseta e short para atividades físicas.</p>
+                        <div class="price">3.500 Kz</div>
+                        <a href="#" class="cta-button">Encomendar</a>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="MODELO-Jaqueta-Escolar-Infantil-4-aos-16-anos.jpg" alt="Jaqueta Escolar">
+                    </div>
+                    <div class="product-info">
+                        <h3>Jaqueta Escolar</h3>
+                        <p>Jaqueta com logo da escola para dias frios.</p>
+                        <div class="price">7.000 Kz</div>
+                        <a href="#" class="cta-button">Encomendar</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section animate__animated animate__fadeIn">
+            <h2><i class="fas fa-pencil-alt"></i> Materiais Escolares</h2>
+            <p>Oferecemos todos os materiais necessários para o ano letivo, com qualidade garantida e preços competitivos.</p>
+            
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="kit.png" alt="Estojo Escolar">
+                    </div>
+                    <div class="product-info">
+                        <h3>Estojo Completo</h3>
+                        <p>Com lápis, canetas, borracha, apontador e régua.</p>
+                        <div class="price">2.500 Kz</div>
+                        <a href="#" class="cta-button">Encomendar</a>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="moc.jpg" alt="Mochila Escolar">
+                    </div>
+                    <div class="product-info">
+                        <h3>Mochila Escolar</h3>
+                        <p>Resistente e ergonômica, com compartimentos organizados.</p>
+                        <div class="price">8.000 Kz</div>
+                        <a href="#" class="cta-button">Encomendar</a>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="cad.jpg" alt="Cadernos">
+                    </div>
+                    <div class="product-info">
+                        <h3>Pacote de Cadernos</h3>
+                        <p>5 cadernos universitários de 200 folhas.</p>
+                        <div class="price">3.000 Kz</div>
+                        <a href="#" class="cta-button">Encomendar</a>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="geo.jpg" alt="Kit de Geometria">
+                    </div>
+                    <div class="product-info">
+                        <h3>Kit de Geometria</h3>
+                        <p>Com régua, transferidor, compasso e esquadros.</p>
+                        <div class="price">2.000 Kz</div>
+                        <a href="#" class="cta-button">Encomendar</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section animate__animated animate__fadeIn">
+            <h2><i class="fas fa-book"></i> Livros Didáticos</h2>
+            <p>Os melhores livros didáticos, alinhados com nosso currículo escolar.</p>
+            
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="mat.jpg" alt="Livro de Matemática">
+                    </div>
+                    <div class="product-info">
+                        <h3>Matemática Avançada</h3>
+                        <p>Para alunos do ensino secundário.</p>
+                        <div class="price">6.500 Kz</div>
+                        <a href="#" class="cta-button">Encomendar</a>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="lin.jpg" alt="Livro de Português">
+                    </div>
+                    <div class="product-info">
+                        <h3>Gramática Aplicada</h3>
+                        <p>Língua Portuguesa para todos os níveis.</p>
+                        <div class="price">5.800 Kz</div>
+                        <a href="#" class="cta-button">Encomendar</a>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="ima.jpg" alt="Livro de Informatica">
+                    </div>
+                    <div class="product-info">
+                        <h3>Livro de Informática</h3>
+                        <p>Conteúdo completo para ensino médio.</p>
+                        <div class="price">7.200 Kz</div>
+                        <a href="#" class="cta-button">Encomendar</a>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="ing.jpeg" alt="Livro de Inglês">
+                    </div>
+                    <div class="product-info">
+                        <h3>Inglês Essencial</h3>
+                        <p>Método completo para aprendizado de inglês.</p>
+                        <div class="price">6.000 Kz</div>
+                        <a href="#" class="cta-button">Encomendar</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section animate__animated animate__fadeIn">
+            <h2><i class="fas fa-info-circle"></i> Informações Importantes</h2>
+            <div class="info-grid">
+                <div>
+                    <h3>Formas de Pagamento</h3>
+                    <p>Aceitamos dinheiro, transferência bancária e cartões de crédito/débito.</p>
+                </div>
+                <div>
+                    <h3>Entrega</h3>
+                    <p>Entregamos na escola ou em domicílio (taxas adicionais podem aplicar).</p>
+                </div>
+                <div>
+                    <h3>Horário de Atendimento</h3>
+                    <p>Segunda a Sexta: 8h00 - 16h00</p>
+                </div>
+                <div>
+                    <h3>Encomendas</h3>
+                    <p>Para encomendas especiais ou tamanhos fora do padrão, favor contactar-nos.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="cta animate__animated animate__fadeIn">
+            <h2>Precisa de ajuda para escolher os produtos?</h2>
+            <p>Nossa equipe está pronta para orientá-lo sobre os melhores materiais para o ano letivo do seu filho.</p>
+            <a href="contacto.html" class="cta-button">Fale Conosco</a>
+        </section>
+        
+        <div class="social-media animate__animated animate__fadeIn">
+            <a href="https://web.facebook.com/profile.php?id=100092992183432&mibextid=ZbWKwL&_rdc=1&_rdr#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/colegioyuraryana/?igsh=YmR1dnlxemw1dHhq#" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+    </div>
+
+    <footer>
+        <img src="back.png" alt="Logo da Escola">
+        <p>&copy; 2025 Complexo Escola Privado Yuraryana. Todos os direitos reservados.</p>
+        <a href="politica-de-privacidade.html">Política de Privacidade</a>
+        <a href="termos-de-uso.html">Termos de Uso</a>
+        
+    </footer>
+
+</body>
+</html>
